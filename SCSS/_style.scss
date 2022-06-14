@@ -13,7 +13,7 @@
     margin-bottom: 20px;
   }
   .text {
-    width: 300px;
+    max-width: 300px;
     height: 56px;
     text-indent: 10px;
     border-radius: 10px;
@@ -38,7 +38,7 @@
 .list {
   background-color: #fbfaf5;
   margin: 0 auto;
-  width: 400px;
+  max-width: 400px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 12px -2px black;
@@ -70,7 +70,7 @@
 }
 .list-bg {
   background-color: #fff1cf;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 32px;
 }
@@ -87,4 +87,18 @@
   background-image:url(../images/check_box_black_24dp.svg);
   box-sizing: 20px;
   
+}
+@media(max-width:576px){
+  .input{
+    flex-wrap: wrap;
+  }
+  .save{
+    margin-top: 20px;
+    border-radius:  50px !important;
+  }
+  .list{
+    li{
+      font-size: 14px;
+    }
+  }
 }
