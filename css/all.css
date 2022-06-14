@@ -176,5 +176,8 @@ table {
   .list li {
     font-size: 14px;
   }
+  .list-bg {
+    padding: 15px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
