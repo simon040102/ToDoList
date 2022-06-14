@@ -92,7 +92,7 @@ table {
   padding-right: 20px;
   height: 56px;
   border-radius: 5px 50px 50px 5px;
-  background-color: #4c86a8;
+  background-color: #60a1c7;
   color: white;
   border: solid 1px #2c4959;
   -webkit-transition: 0.3s;
@@ -123,27 +123,21 @@ table {
   color: #854141;
 }
 
-.list li input {
-  margin-right: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .list li a {
   text-decoration: none;
-  margin-right: 20px;
-  float: right;
 }
 
-.list li a img {
-  margin-bottom: -4px;
+.list li a .del {
+  margin-right: 20px;
+  margin-top: 10px;
+  float: right;
   height: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-bottom: -5px;
 }
 
-.list li a img:hover {
+.list li a .del:hover {
   height: 24px;
 }
 
@@ -156,5 +150,17 @@ table {
 
 .finished {
   text-decoration: line-through;
+}
+
+.check {
+  height: 20px;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+.confirm-finished {
+  background-image: url(../images/check_box_black_24dp.svg);
+  -webkit-box-sizing: 20px;
+          box-sizing: 20px;
 }
 /*# sourceMappingURL=all.css.map */
