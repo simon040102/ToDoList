@@ -50,23 +50,37 @@
     line-height: 45px;
     border-bottom: 1px solid rgba(214, 118, 118, 0.861);
     color: rgb(133, 65, 65);
-    a {
-      text-decoration: none;
-      
-
+    
       .del {
+        width: 20px;
+         text-decoration: none;
         margin-right: 20px;
-        margin-top: 10px;
-        float: right;
-        height: 20px;
+        margin-top: 12px;
+        background-image: url(../images/delete_black_24dp.svg);
+        background-size: 100%;
+        border: none;
+        background-color: #fbfaf5;
+        background-repeat: no-repeat;
+        height: 30px;
         transition: 0.3s;
         margin-bottom: -5px;
         &:hover {
-          height: 24px;
+          height: 32px;
         }
       }
     }
   }
+
+.del {
+  background-image: url(../images/delete_black_24dp.svg);
+  height: 30px;
+  width: 30px;
+  background-size: 100%;
+  border: none;
+  background-color: #fbfaf5;
+  background-repeat: no-repeat;
+  float: right;
+  padding-top: 5px;
 }
 .list-bg {
   background-color: #fff1cf;
@@ -81,27 +95,28 @@
 .check {
   height: 20px;
   margin-bottom: -5px;
-  margin-right: 10px;
+  padding-right: 10px;
 }
-.confirm-finished{
-  background-image:url(../images/check_box_black_24dp.svg);
+.confirm-finished {
+  background-image: url(../images/check_box_black_24dp.svg);
   box-sizing: 20px;
-  
+  box-sizing: 100%;
+  background-repeat: no-repeat;
 }
-@media(max-width:576px){
-  .input{
+@media (max-width: 576px) {
+  .input {
     flex-wrap: wrap;
   }
-  .save{
+  .save {
     margin-top: 20px;
-    border-radius:  50px !important;
+    border-radius: 50px !important;
   }
-  .list{
-    li{
+  .list {
+    li {
       font-size: 14px;
     }
   }
-  .list-bg{
+  .list-bg {
     padding: 15px;
   }
 }
