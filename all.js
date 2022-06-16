@@ -56,9 +56,7 @@ list.addEventListener('click', remove);
 function remove(e) {
   let num = e.target.dataset.num;
   let check = e.target.dataset.check;
-  if (e.target.nodeName == 'A') {
-    ary.splice(num, 1);
-  }
+  
   if (e.target.nodeName == 'IMG' && e.target.nodeName !== 'A') {
     console.log(check);
     console.log(num);
@@ -72,6 +70,11 @@ function remove(e) {
       ary[num].finished = '';
       ary[num].del = '';
     }
+  }
+  if (e.target.nodeName == 'A') {
+    ary.splice(num, 1);
+    init();
+    return
   }
   init();
 }
